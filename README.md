@@ -6,8 +6,8 @@ It also has the option to put these names in a csv file.
 
 ## Usage
 
-Simply provide the python script with the contacts database filename as an argument, and optionally include the '-csv' argument to create a .csv file. It will output a file in the same directory with the same filename as the contacts database.
+Simply provide the python script with the contacts database filename as an argument, and optionally include the `-csv` argument to create a .csv file. It will output a file in the same directory with the same filename as the contacts database.
 
 ## TODO
 
-Add support for '.VCF' (vCard) contact files.
+Add support for `.VCF` (vCard) contact files.

@@ -10,7 +10,8 @@ parser.add_argument('-csv', help='Enable csv file output. (Outputs <filename>.cs
 args = parser.parse_args()
 
 query = "SELECT raw_contacts._id, raw_contacts.display_name, data.data1 FROM raw_contacts, data \
-		WHERE raw_contacts._id = data.raw_contact_id AND data.mimetype_id = 5 ORDER BY raw_contacts._id"
+		WHERE raw_contacts._id = data.raw_contact_id AND data.mimetype_id = 5 \
+		ORDER BY raw_contacts._id"
 
 with sqlite3.connect(args.filename) as connection:
 	cursor = connection.cursor()
